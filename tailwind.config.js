@@ -15,6 +15,8 @@ module.exports = {
                 gradient2: "#fee893",
                 offblack: "#090447",
                 bubble: "#a1d5e0",
+                lightYellow: "#fff3c4",
+                grey: "#737373",
             },
         },
     },
