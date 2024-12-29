@@ -17,9 +17,11 @@ const Inner = () => {
         <div className="bg-background">
             <Header />
             <div className="wrapper py-10 relative">
-                <div className="flex ">
-                    <div></div>
-                    <div className="w-[60%]">
+                <div className="flex md:flex-row flex-col gap-10 md:gap-20 ">
+                    <div className="md:w-[40%]">
+                        <img src={pageData.images[0].fields.file.url} />
+                    </div>
+                    <div className="md:w-[60%]">
                         <h1 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
                             {pageData.howItWorksTitle}
                         </h1>
@@ -48,8 +50,8 @@ const Inner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="my-20">
-                    <div className="w-[60%]">
+                <div className="my-20 flex   md:flex-row flex-col gap-10 md:gap-20">
+                    <div className="md:w-[60%]">
                         <h2 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
                             {pageData.yourDataTitle}
                         </h2>
@@ -59,10 +61,17 @@ const Inner = () => {
                             )}
                         </div>
                     </div>
-                    <div></div>
+                    <div className="md:w-[40%]">
+                        <img src={pageData.images[1].fields.file.url} />
+                    </div>
                 </div>
-                <div className=" ">
-                    <div className="w-[60%]">
+                <div className=" flex  md:flex-row flex-col gap-10 md:gap-20 my-20">
+                    <div className="md:w-[40%]">
+                        {pageData.images.length > 2 ? (
+                            <img src={pageData.images[2].fields.file.url} />
+                        ) : null}
+                    </div>
+                    <div className="md:w-[60%]">
                         <h2 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
                             {pageData.reportingTitle}
                         </h2>
