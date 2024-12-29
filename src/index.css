@@ -6,11 +6,11 @@
 
 @layer utilities {
     .text-custom {
-        font-size: clamp(20px, 8.5vw, 68px);
-        line-height: clamp(20px, 8.5vw, 68px);
+        font-size: clamp(40px, 8.5vw, 68px);
+        line-height: clamp(40px, 8.5vw, 68px);
     }
     .text-custom2 {
-        font-size: clamp(15px, 2.5vw, 30px);
+        font-size: clamp(18px, 2.5vw, 30px);
         line-height: normal;
     }
     .wrapper {
@@ -20,6 +20,39 @@
     }
     .h-custom {
         height: calc(100vh - 5rem);
+    }
+    .phone1 {
+        width: 100%;
+        max-width: 400px;
+        bottom: 0;
+        right: max(-205px, -51%);
+        left: auto;
+    }
+    .phone2 {
+        width: 100%;
+        max-width: 400px;
+        bottom: 0;
+        right: 0;
+        left: auto;
+    }
+    @media (min-width: 768px) {
+        .phone1 {
+            bottom: auto;
+            top: 8rem;
+        }
+        .phone2 {
+            bottom: auto;
+            top: 8rem;
+        }
+    }
+    @media (min-width: 1200px) {
+        .phone1 {
+            max-width: 500px;
+            right: max(-254px, -51%);
+        }
+        .phone2 {
+            max-width: 500px;
+        }
     }
 }
 
@@ -48,6 +81,11 @@
     margin: 0;
     background: #a1d5e0;
 }
+@media (max-width: 768px) {
+    .swiper-slide-active .div {
+        height: 325px;
+    }
+}
 .swiper-slide-active img {
     height: 300px;
 }
@@ -55,6 +93,12 @@
 .swiper-slide-prev .div {
     height: 375px;
     background: #fee893;
+}
+@media (max-width: 768px) {
+    .swiper-slide-next .div,
+    .swiper-slide-prev .div {
+        height: 275px;
+    }
 }
 .swiper-slide-next img,
 .swiper-slide-prev img {
@@ -68,9 +112,33 @@
     height: 325px;
     background: #ffd101;
 }
+@media (max-width: 768px) {
+    .swiper-slide-next-next .div,
+    .swiper-slide-prev-prev .div {
+        height: 225px;
+    }
+}
 .swiper-slide-next-next img,
 .swiper-slide-prev-prev img {
     height: 220px;
+}
+@media (max-width: 768px) {
+    .swiper-slide-next-next img,
+    .swiper-slide-prev-prev img {
+        height: 120px;
+    }
+    .swiper-slide-next img,
+    .swiper-slide-prev img {
+        max-height: 180px;
+        aspect-ratio: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    .swiper-slide-active img {
+        max-height: 220px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 .swiper-slide-active,
 .swiper-slide-next,

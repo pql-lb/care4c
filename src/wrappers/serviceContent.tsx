@@ -13,7 +13,7 @@ interface PageContextType {
     error: string | null;
 }
 
-const PageContext = createContext<PageContextType>({
+const PageContext = createContext({
     pageData: null,
     loading: true,
     error: null,
@@ -21,7 +21,7 @@ const PageContext = createContext<PageContextType>({
 
 export const usePageData = () => useContext(PageContext);
 
-export const PageProvider = ({ children }: any) => {
+export const PageProviderService = ({ children }: any) => {
     const [pageData, setPageData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -30,7 +30,7 @@ export const PageProvider = ({ children }: any) => {
         const fetchPageData = async () => {
             try {
                 const response = await client.getEntries({
-                    content_type: "homePage",
+                    content_type: "servicePage",
                 });
 
                 if (response.items.length > 0) {

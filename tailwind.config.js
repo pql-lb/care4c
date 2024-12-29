@@ -2,6 +2,14 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx,html}", "./public/index.html"],
     theme: {
+        screens: {
+            xs: "420px",
+            sm: "640px",
+            md: "768px",
+            xmd: "900px",
+            lg: "1024px",
+            xl: "1280px",
+        },
         fontFamily: {
             montserrat: "Montserrat",
             poppins: "Poppins",

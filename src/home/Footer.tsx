@@ -25,7 +25,7 @@ export const Footer = ({}: any) => {
     if (pageData) {
         return (
             <footer className=" py-10 pt-20 bg-background">
-                <div className="grid grid-cols-5 pb-20 gap-10 wrapper text-white font-poppins">
+                <div className="grid  md:grid-cols-5 pb-20 gap-10 wrapper text-white font-poppins">
                     <div>
                         <img
                             className="max-w-[100px]"
@@ -72,7 +72,7 @@ export const Footer = ({}: any) => {
                         </Link>
                     </div>
                 </div>
-                <div className="wrapper flex gap-5 text-white font-poppins">
+                <div className="wrapper flex sm:flex-row flex-col gap-5 text-white font-poppins">
                     <p>{pageData.bottomText}</p>
                     <div className="flex gap-2">
                         <Link

@@ -18,21 +18,21 @@ export const Works = ({ pageData }) => {
         }
     }, [pageData]);
     return (
-        <div className="py-20 mt-20 relative">
+        <div className="py-20 mt-32 md:mt-20 relative">
             <div className="w-[75px] h-[75px] absolute left-[40%] top-[0%] border-bubble border-2 opacity-10 rounded-full"></div>
             <div className="wrapper ">
-                <div className="flex gap-20 mb-10">
-                    <div className="w-[50%]">
-                        <h2 className="text-gold mb-10 pr-20 text-6xl uppercase font-montserrat  font-bold leading-tight">
+                <div className="flex md:flex-row flex-col gap-10 md:gap-20 mb-10">
+                    <div className="md:w-[50%]">
+                        <h2 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
                             {pageData.howItWorksTitle}
                         </h2>
-                        <div className="text-white text-lg font-poppins">
+                        <div className="text-white text-base sm:text-lg  font-poppins">
                             {documentToReactComponents(
                                 pageData.howItWorksDescription_
                             )}
                         </div>
                     </div>
-                    <div className="w-[50%]">
+                    <div className="md:w-[50%]">
                         <div className="aspect-square max-h-[300px] bg-gold w-full h-full flex justify-center items-center text-3xl text-gradient1 uppercase font-bold">
                             {videoUrl ? (
                                 <video controls width="640" height="360">
@@ -48,7 +48,7 @@ export const Works = ({ pageData }) => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-8">
                     {pageData.howItWorksStatisticBoxes.map((item: any, i) => {
                         return (
                             <div

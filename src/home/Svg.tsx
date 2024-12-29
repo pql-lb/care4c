@@ -26,13 +26,7 @@ export const Svg = () => {
     return (
         <svg
             id="svg1"
-            style={{
-                position: "absolute",
-                left: "-10%",
-                width: "120%",
-                top: "10%",
-                zIndex: 20,
-            }}
+            className="absolute -left-[10%] w-[120%] bottom-[8%] md:top-[10%] z-20"
             viewBox="0 0 322.86547 110.27426"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -50,11 +44,12 @@ export const Svg = () => {
             </defs>
 
             <path
+                className="stroke-[25px] sm:stroke-[20px] md:stroke-[15px] lg:stroke-[11px]"
                 style={{
                     fill: "none",
                     fillOpacity: 1,
                     // stroke: "aqua",
-                    strokeWidth: 11,
+                    // strokeWidth: window.innerWidth > 768 ? 11 : 20,
                     strokeLinecap: "round",
                     strokeLinejoin: "round",
                     strokeDasharray: "1000",

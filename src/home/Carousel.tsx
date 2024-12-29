@@ -64,16 +64,28 @@ const Inner = ({ pageData }: any) => {
                         : activeIndex
                         ? -100
                         : 0;
-                const height2 =
-                    index === nextIndex
-                        ? 375
-                        : index === prevIndex
-                        ? 375
-                        : index === activeIndex
-                        ? 425
-                        : 325;
+                let height2;
+                if (window.innerWidth > 768) {
+                    height2 =
+                        index === nextIndex
+                            ? 375
+                            : index === prevIndex
+                            ? 375
+                            : index === activeIndex
+                            ? 425
+                            : 325;
+                } else {
+                    height2 =
+                        index === nextIndex
+                            ? 275
+                            : index === prevIndex
+                            ? 275
+                            : index === activeIndex
+                            ? 325
+                            : 225;
+                }
                 const opacity =
-                    direction < 0 && index === nextNextIndex
+                    direction > 0 && index === nextNextIndex
                         ? 0
                         : direction < 0 && index === prevPrevIndex
                         ? 0
@@ -154,8 +166,17 @@ const Inner = ({ pageData }: any) => {
             >
                 <img src="./arrow.png" alt="Next" />
             </button>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gold">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gold">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -169,8 +190,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gradient1">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gradient1">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -184,8 +214,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gradient2">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gradient2">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -199,8 +238,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gold">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gold">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -214,8 +262,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gradient1">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gradient1">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -229,8 +286,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gradient2">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gradient2">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -244,8 +310,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gold">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gold">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -259,8 +334,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gradient1">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gradient1">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -274,8 +358,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gradient2">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gradient2">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -289,8 +382,17 @@ const Inner = ({ pageData }: any) => {
                     </div>
                 </div>
             </SwiperSlide>
-            <SwiperSlide style={{ width: "22%" }}>
-                <div className="div w-sw relative mx-auto rounded-lg h-[325px] bg-gold">
+            <SwiperSlide
+                style={{
+                    width:
+                        window.innerWidth > 768
+                            ? "22%"
+                            : window.innerWidth > 580
+                            ? "40%"
+                            : "100%",
+                }}
+            >
+                <div className="div w-sw relative mx-auto rounded-lg h-[225px] md:h-[325px] bg-gold">
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
@@ -310,11 +412,11 @@ const Inner = ({ pageData }: any) => {
 export const Carousel = ({ pageData }: any) => {
     console.log(pageData);
     return (
-        <div className="h-screen py-5 relative">
+        <div id="carousel" className="min-h-screen h-fit py-10 relative">
             <div className="w-[75px] h-[75px] absolute -left-[10px] bottom-[10%] bg-bubble opacity-10 rounded-full"></div>
             <div className="w-[75px] h-[75px] absolute left-[50%] bottom-[5%] border-bubble border-2 opacity-10 rounded-full"></div>
             <div className="w-[75px] h-[75px] absolute -right-[10px] bottom-[15%]  bg-bubble opacity-10 rounded-full"></div>
-            <h2 className="font-montserrat text-[100px] font-bold uppercase text-center text-gradient2 opacity-40">
+            <h2 className="font-montserrat leading-tight text-[40px] sm:text-[60px] lg:text-[100px] font-bold uppercase text-center text-gradient2 opacity-40">
                 {pageData.cardsTitle}
             </h2>
             <Inner pageData={pageData} />
