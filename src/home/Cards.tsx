@@ -4,12 +4,12 @@ import { Svg } from "./Svg.tsx";
 export const Cards = ({ pageData }: any) => {
     return (
         <div className="h-screen py-20 mt-10 relative">
-            <div className="wrapper flex z-20 relative">
+            <div className="wrapper flex z-30 relative">
                 <div className="w-[60%] grid grid-cols-2 gap-10">
                     {pageData.features.map((card, index) => {
                         return (
                             <div
-                                className={`bg-lightYellow min-h-[225px] w-full  rounded-md p-5 ${
+                                className={`bg-lightYellow bg-opacity-90 min-h-[225px] w-full  rounded-md p-5 ${
                                     index % 2 === 0 ? "" : "translate-y-[25px]"
                                 }`}
                             >
@@ -26,13 +26,21 @@ export const Cards = ({ pageData }: any) => {
                             </div>
                         );
                     })}
-                    <button className="duration-400 hover:bg-black bg-gradient1 py-2 font-poppins text-lg font-semibold text-white rounded-md">
+                    <button className="duration-400 hover:bg-white hover:text-background bg-gradient1 py-2 font-poppins text-lg font-semibold text-white rounded-md">
                         {pageData.featuresButtonText}
                     </button>
                 </div>
                 <div className="w-[40%]"></div>
             </div>
             <Svg />
+            <img
+                className="absolute z-10 -right-[35vh] bottom-[10%] h-[70vh]"
+                src="./phone1.png"
+            />
+            <img
+                className="absolute z-30 right-[0vh] bottom-[10%] h-[70vh]"
+                src="./phone2.png"
+            />
         </div>
     );
 };

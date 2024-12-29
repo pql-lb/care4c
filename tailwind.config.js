@@ -6,6 +6,7 @@ module.exports = {
             montserrat: "Montserrat",
             poppins: "Poppins",
             inter: "Inter",
+            publicSans: "Public Sans",
         },
         extend: {
             colors: {

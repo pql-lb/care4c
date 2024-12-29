@@ -9,7 +9,7 @@ export const Hero = ({ pageData }: any) => {
             <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] top-[50vh]"></div>
             <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[20vh] -right-[20px]"></div>
             <div className="wrapper min-h-[100vh]  py-20 w-full relative flex">
-                <div className="w-[50%]">
+                <div className="w-[50%] z-[999] relative">
                     <h1 className="mb-8 text-custom font-bold uppercase font-montserrat">
                         <span className="block text-white">
                             {pageData.titleWhite}
@@ -25,7 +25,7 @@ export const Hero = ({ pageData }: any) => {
                         </div>
                         <div className="flex  w-full justify-between">
                             <Button text={pageData.solutionLink} />
-                            <button className="text-offblack font-poppins px-8 xl:min-w-[200px] text-lg py-2 block rounded-[4px] bg-gold">
+                            <button className="text-offblack duration-400 hover:bg-white font-poppins px-8 xl:min-w-[200px] text-lg py-2 block rounded-[4px] bg-gold">
                                 {pageData.contactUsButton}
                             </button>
                         </div>
