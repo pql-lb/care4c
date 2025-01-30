@@ -3,7 +3,7 @@ import { Svg } from "./Svg.tsx";
 
 export const Cards = ({ pageData }: any) => {
     return (
-        <div className="lg:min-h-screen pt-0 sm:pt-20 py-10  relative">
+        <div className=" my-20 mb-40  relative">
             <div className="wrapper z-30 relative">
                 <div className="md:w-[50%] lg:w-[60%] grid lg:grid-cols-2 gap-5 lg:gap-10">
                     {pageData.features.map((card, index) => {

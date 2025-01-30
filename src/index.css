@@ -19,7 +19,7 @@
         margin: auto;
     }
     .h-custom {
-        height: calc(100vh - 5rem);
+        height: calc(700px - 5rem);
     }
     .phone1 {
         width: 100%;
@@ -34,6 +34,9 @@
         bottom: 0;
         right: 0;
         left: auto;
+    }
+    .right-custom {
+        right: min(calc(- ((100% - 1200px) / 2), -5%));
     }
     @media (min-width: 768px) {
         .phone1 {

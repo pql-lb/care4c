@@ -14,12 +14,23 @@ const Inner = () => {
     }
     console.log(pageData);
     return (
-        <div className="bg-background">
+        <div className="bg-background relative h-fit overflow-hidden">
+            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute -left-[5px] top-[5%]"></div>
+            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[45%]"></div>
+            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] bottom-[15%]"></div>
+            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[20%] -right-[20px]"></div>
+            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[5vw] bottom-[35%]"></div>
+            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[73%] -right-[10px]"></div>
             <Header />
-            <div className="wrapper py-10 relative">
-                <div className="flex md:flex-row flex-col gap-10 md:gap-20 ">
-                    <div className="md:w-[40%]">
-                        <img src={pageData.images[0].fields.file.url} />
+            <div className="wrapper pt-10 relative">
+                <div className="flex relative h-fit md:flex-row flex-col gap-10 md:gap-20 my-16 mt-0 ">
+                    <div className="md:w-[40%] relative">
+                        <div className="h-full md:absolute  flex justify-center w-full">
+                            <img
+                                className=" h-full w-auto md:max-w-full max-w-[400px] object-contain"
+                                src={pageData.images[0].fields.file.url}
+                            />
+                        </div>
                     </div>
                     <div className="md:w-[60%]">
                         <h1 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
@@ -33,7 +44,7 @@ const Inner = () => {
                         <h2 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
                             {pageData.dataPillersTitle}
                         </h2>
-                        <div className="grid grid-cols-3">
+                        <div className="grid grid-cols-3 gap-y-8">
                             {pageData.dataPillarIcons.map((item) => {
                                 return (
                                     <div className="flex flex-col items-center">
@@ -50,7 +61,7 @@ const Inner = () => {
                         </div>
                     </div>
                 </div>
-                <div className="my-20 flex   md:flex-row flex-col gap-10 md:gap-20">
+                <div className="my-16 flex h-fit relative md:flex-row flex-col gap-10 md:gap-20">
                     <div className="md:w-[60%]">
                         <h2 className="text-gold mb-10 sm:pr-10 md:pr-20 text-4xl sm:text-5xl md:text-6xl uppercase font-montserrat font-bold leading-tight">
                             {pageData.yourDataTitle}
@@ -61,11 +72,14 @@ const Inner = () => {
                             )}
                         </div>
                     </div>
-                    <div className="md:w-[40%]">
-                        <img src={pageData.images[1].fields.file.url} />
+                    <div className="md:w-[40%] ">
+                        <img
+                            className="w-auto md:min-w-[50vw]  h-full md:absolute md:right-custom object-fill"
+                            src={pageData.images[1].fields.file.url}
+                        />
                     </div>
                 </div>
-                <div className=" flex  md:flex-row flex-col gap-10 md:gap-20 my-20">
+                <div className="mb-0 flex  md:flex-row flex-col gap-10 md:gap-20 my-16">
                     <div className="md:w-[40%]">
                         {pageData.images.length > 2 ? (
                             <img src={pageData.images[2].fields.file.url} />

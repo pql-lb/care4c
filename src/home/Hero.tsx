@@ -8,13 +8,13 @@ export const Hero = ({ pageData }: any) => {
         gsap.to(window, { scrollTo: "#carousel" });
     };
     return (
-        <>
+        <div className=" relative z-20">
             <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[45vh]"></div>
             <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] top-[50vh]"></div>
             <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[20vh] -right-[20px]"></div>
-            <div className="wrapper min-h-[100vh]  py-5 w-full relative flex lg:flex-row flex-col">
+            <div className="wrapper h-full pt-10 w-full relative flex lg:flex-row flex-col">
                 <div className="lg:w-[50%] z-[999] mb-20 lg:mb-0 relative">
-                    <h1 className="mb-8 text-custom font-bold uppercase font-montserrat">
+                    <h1 className="mb-[5vh] text-custom font-bold uppercase font-montserrat">
                         <span className="block text-white">
                             {pageData.titleWhite}
                         </span>
@@ -23,7 +23,7 @@ export const Hero = ({ pageData }: any) => {
                         </span>
                     </h1>
                     <div className="sm:pr-40 w-full relative">
-                        <div className="flex mb-8 text-white font-poppins text-custom2">
+                        <div className="flex mb-[5vh] text-white font-poppins text-custom2">
                             <div className="w-[50px] mr-[25px] shrink-0">
                                 <svg
                                     className="w-full"
@@ -77,8 +77,8 @@ export const Hero = ({ pageData }: any) => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-[50%] relative flex items-center justify-center">
-                    <div className="h-custom overflow-y-clip w-[400px] relative">
+                <div className="lg:w-[50%] relative flex items-end justify-center">
+                    <div className="h-custom  overflow-hidden overflow-y-clip w-[400px] relative">
                         <img
                             className=" z-20 w-full  absolute top-0"
                             src="mobile.png"
@@ -86,11 +86,11 @@ export const Hero = ({ pageData }: any) => {
                         <div className="h-[60%] z-30 bg-gradient-to-b from-transparent to-background w-full absolute bottom-0 left-0"></div>
                     </div>
                     <img
-                        className="absolute z-10 block h-[140vh] max-w-none -ml-[30vh]"
+                        className="absolute z-10 block h-[1000px] -bottom-[180px] max-w-none -ml-[150px]"
                         src="/blur2.png"
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 };

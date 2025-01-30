@@ -412,7 +412,7 @@ const Inner = ({ pageData }: any) => {
 export const Carousel = ({ pageData }: any) => {
     console.log(pageData);
     return (
-        <div id="carousel" className="min-h-screen h-fit py-10 relative">
+        <div id="carousel" className="h-fit  my-20 z-10 relative">
             <div className="w-[75px] h-[75px] absolute -left-[10px] bottom-[10%] bg-bubble opacity-10 rounded-full"></div>
             <div className="w-[75px] h-[75px] absolute left-[50%] bottom-[5%] border-bubble border-2 opacity-10 rounded-full"></div>
             <div className="w-[75px] h-[75px] absolute -right-[10px] bottom-[15%]  bg-bubble opacity-10 rounded-full"></div>
