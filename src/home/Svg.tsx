@@ -26,7 +26,7 @@ export const Svg = () => {
     return (
         <svg
             id="svg1"
-            className="absolute -left-[10%] w-[120%] bottom-[8%] md:top-[10%] xl:top-0 3xl:top-[-15%] 4xl:top-[-25%] 5xl:hidden z-20"
+            className="absolute -left-[10%] w-[120%] bottom-[8%] md:top-[10%] xl:top-0 3xl:top-[-15%] 4xl:top-[-25%] 5xl:top-[35%] 6xl:hidden z-20"
             viewBox="0 0 322.86547 110.27426"
             xmlns="http://www.w3.org/2000/svg"
         >

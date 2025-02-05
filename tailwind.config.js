@@ -11,7 +11,8 @@ module.exports = {
             xl: "1280px",
             "3xl": "1700px",
             "4xl": "2000px",
-            "5xl": "2700px",
+            "5xl": "2400px",
+            "6xl": "2800px",
         },
         fontFamily: {
             montserrat: "Montserrat",
