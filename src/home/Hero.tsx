@@ -9,9 +9,9 @@ export const Hero = ({ pageData }: any) => {
     };
     return (
         <div className=" relative z-20">
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[45vh]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] top-[50vh]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[20vh] -right-[20px]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[45vh]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] top-[50vh]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[20vh] -right-[20px]"></div>
             <div className="wrapper h-full pt-10 w-full relative flex lg:flex-row flex-col">
                 <div className="lg:w-[50%] z-[999] mb-20 lg:mb-0 relative">
                     <h1 className="mb-[5vh] text-custom font-bold uppercase font-montserrat">

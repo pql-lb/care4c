@@ -16,9 +16,9 @@ const Inner = () => {
     console.log(pageData);
     return (
         <div className="bg-background relative overflow-hidden">
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[16%]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[15vw] bottom-[25%]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[60%] -right-[20px]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[16%]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[15vw] bottom-[25%]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[60%] -right-[20px]"></div>
 
             <Header />
             <div className="wrapper ">

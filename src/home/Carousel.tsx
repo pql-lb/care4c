@@ -415,9 +415,9 @@ export const Carousel = ({ pageData }: any) => {
     console.log(pageData);
     return (
         <div id="carousel" className="h-fit  my-20 z-10 relative">
-            <div className="w-[75px] h-[75px] absolute -left-[10px] bottom-[10%] bg-bubble opacity-10 rounded-full"></div>
-            <div className="w-[75px] h-[75px] absolute left-[50%] bottom-[5%] border-bubble border-2 opacity-10 rounded-full"></div>
-            <div className="w-[75px] h-[75px] absolute -right-[10px] bottom-[15%]  bg-bubble opacity-10 rounded-full"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] absolute -left-[10px] bottom-[10%] bg-bubble opacity-10 rounded-full"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] absolute left-[50%] bottom-[5%] border-bubble border-2 opacity-10 rounded-full"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] absolute -right-[10px] bottom-[15%]  bg-bubble opacity-10 rounded-full"></div>
             <h2 className="font-montserrat leading-tight text-[40px] sm:text-[60px] lg:text-[100px] font-bold uppercase text-center text-gradient2 opacity-40">
                 {pageData.cardsTitle}
             </h2>

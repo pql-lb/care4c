@@ -15,12 +15,12 @@ const Inner = () => {
     console.log(pageData);
     return (
         <div className="bg-background relative h-fit overflow-hidden">
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute -left-[5px] top-[5%]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[45%]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] bottom-[15%]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[20%] -right-[20px]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[5vw] bottom-[35%]"></div>
-            <div className="w-[75px] h-[75px] opacity-10 rounded-full bg-bubble absolute top-[73%] -right-[10px]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] xl:w-[150px] h-[75px]  opacity-10 rounded-full border-2 bg-transparent border-bubble absolute -left-[5px] top-[5%]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] xl:w-[150px] h-[75px]  opacity-10 rounded-full bg-bubble absolute -left-[25px] top-[45%]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] xl:w-[150px] h-[75px]  opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[45vw] bottom-[15%]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] xl:w-[150px] h-[75px]  opacity-10 rounded-full bg-bubble absolute top-[20%] -right-[20px]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] xl:w-[150px] h-[75px]  opacity-10 rounded-full border-2 bg-transparent border-bubble absolute left-[5vw] bottom-[35%]"></div>
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] xl:w-[150px] h-[75px]  opacity-10 rounded-full bg-bubble absolute top-[73%] -right-[10px]"></div>
             <Header />
             <div className="wrapper pt-10 relative">
                 <div className="flex relative h-fit md:flex-row flex-col gap-10 md:gap-20 my-16 mt-0 ">
