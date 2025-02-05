@@ -25,14 +25,14 @@
         width: 100%;
         max-width: 400px;
         bottom: 0;
-        right: max(-205px, -51%);
+        right: max(calc(-205px - 50px), calc(-61% - 50px));
         left: auto;
     }
     .phone2 {
         width: 100%;
         max-width: 400px;
         bottom: 0;
-        right: 0;
+        right: -50px;
         left: auto;
     }
     .right-custom {
@@ -51,10 +51,20 @@
     @media (min-width: 1200px) {
         .phone1 {
             max-width: 500px;
-            right: max(-254px, -51%);
+            right: max(calc(-254px - 50px), calc(-51% - 50px));
         }
         .phone2 {
             max-width: 500px;
+        }
+    }
+    @media (max-width: 460px) {
+        .phone1 {
+            max-width: 500px;
+            right: max(calc(-254px), calc(-51%));
+        }
+        .phone2 {
+            max-width: 500px;
+            right: 0;
         }
     }
 }
