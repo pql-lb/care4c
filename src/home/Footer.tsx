@@ -73,7 +73,7 @@ export const Footer = ({}: any) => {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex sm:flex-row flex-col gap-5 text-white font-poppins">
+                    <div className="wrapper flex sm:flex-row flex-col gap-5 text-white font-poppins">
                         <p>{pageData.bottomText}</p>
                         <div className="flex gap-2">
                             <Link
