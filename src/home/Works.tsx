@@ -19,6 +19,7 @@ export const Works = ({ pageData }) => {
     }, [pageData]);
     return (
         <div className="my-20 relative z-50">
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] absolute -right-[10px] bottom-[10%] bg-bubble opacity-10 rounded-full"></div>
             <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] absolute left-[40%] top-[0%] border-bubble border-2 opacity-10 rounded-full"></div>
             <div className="wrapper ">
                 <div className="flex md:flex-row flex-col gap-10 md:gap-20 mb-10">

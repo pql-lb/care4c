@@ -4,6 +4,7 @@ import { Svg } from "./Svg.tsx";
 export const Cards = ({ pageData }: any) => {
     return (
         <div className=" my-20 mb-40 h-fit relative">
+            <div className="w-[75px] xl:w-[150px] xl:h-[150px] h-[75px] absolute -right-[10px] bottom-[-10%] border-2 border-bubble opacity-10 rounded-full"></div>
             <div className="wrapper z-30 relative">
                 <div className="md:w-[50%] lg:w-[60%] grid lg:grid-cols-2 gap-5 lg:gap-10">
                     {pageData.features.map((card, index) => {
