@@ -66,7 +66,7 @@ export const Hero = ({ pageData }: any) => {
                             </div>
                             <p className="">{pageData.subtitle}</p>
                         </div>
-                        <div className="flex gap-5 w-fit lg:w-full justify-between">
+                        <div className="xl:max-w-[450px] flex gap-5 w-fit lg:w-full justify-between">
                             <Button
                                 onClick={handleClick}
                                 text={pageData.solutionLink}
