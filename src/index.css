@@ -81,6 +81,8 @@
 }
 .swiper-slide-active .div {
     height: 425px;
+    width: 130%;
+    transform: translateX(-15%);
     margin: 0;
     background: #a1d5e0;
 }

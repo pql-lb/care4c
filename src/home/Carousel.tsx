@@ -51,6 +51,8 @@ const Inner = ({ pageData }: any) => {
                         ? 75
                         : index === nextNextIndex
                         ? -75
+                        : index === activeIndex
+                        ? "-15%"
                         : 0;
                 const xPrev =
                     index === nextIndex
