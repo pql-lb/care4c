@@ -182,7 +182,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[0].fields.file.url}
                             />
                         </div>
@@ -206,7 +206,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[1].fields.file.url}
                             />
                         </div>
@@ -230,7 +230,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[2].fields.file.url}
                             />
                         </div>
@@ -254,7 +254,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[3].fields.file.url}
                             />
                         </div>
@@ -278,7 +278,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[4].fields.file.url}
                             />
                         </div>
@@ -302,7 +302,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[0].fields.file.url}
                             />
                         </div>
@@ -326,7 +326,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[1].fields.file.url}
                             />
                         </div>
@@ -350,7 +350,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[2].fields.file.url}
                             />
                         </div>
@@ -374,7 +374,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[3].fields.file.url}
                             />
                         </div>
@@ -398,7 +398,7 @@ const Inner = ({ pageData }: any) => {
                     <div className="p-5 flex flex-col justify-between h-full">
                         <div className="flex items-center h-full">
                             <img
-                                className="aspect-square xl:aspect-auto rounded-md object-cover"
+                                className="aspect-square xl:aspect-auto xl:w-full rounded-md object-cover"
                                 src={pageData.cardMedia[4].fields.file.url}
                             />
                         </div>
