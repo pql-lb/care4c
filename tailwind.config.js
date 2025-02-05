@@ -9,6 +9,9 @@ module.exports = {
             xmd: "900px",
             lg: "1024px",
             xl: "1280px",
+            "3xl": "1700px",
+            "4xl": "2000px",
+            "5xl": "2500px",
         },
         fontFamily: {
             montserrat: "Montserrat",
