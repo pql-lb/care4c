@@ -14,9 +14,18 @@
         line-height: normal;
     }
     .wrapper {
-        max-width: 1200px;
         width: 90%;
         margin: auto;
+    }
+    @media (min-width: 1200px) {
+        .wrapper {
+            width: 80%;
+        }
+    }
+    @media (min-width: 1600px) {
+        .wrapper {
+            width: 70%;
+        }
     }
     .h-custom {
         height: calc(700px - 5rem);
